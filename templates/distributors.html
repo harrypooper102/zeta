@@ -1,0 +1,474 @@
+<!doctype html>
+{% extends "layout.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap-4.4.1.css')}}">
+{% endblock %}
+
+{% block body %}
+    <div id="accordion3" role="tablist">
+      <div class="main">
+		  <div class="card" id="africa">
+        <div class="card-header" role="tab" id="headingOne1">
+          <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1">Africa</a></h5>
+        </div>
+        <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordion3">
+          <div id="headingSix1" role="tablist">
+            <div class="card country">
+              <div class="card-header2" role="tab" id="headingSeven1">
+                <h5 class="mb-0"><a data-toggle="collapse" href="#collapseSeven1" role="button" aria-expanded="true" aria-controls="collapseSeven1">Egypt</a></h5>
+              </div>
+              <div id="collapseSeven1" class="collapse" role="tabpanel" aria-labelledby="headingSeven1" data-parent="#headingSix1">
+                <div class="card-body"><a onClick="openPopup()">NEW TEST Co. (NTCo)</a></div>
+					<div id="myNav" class="overlay">
+					  <!-- Button to close the overlay navigation -->
+					  <a class="close" onclick="closePopup()">&times;</a>
+
+					  <!-- Overlay content -->
+					  <div class="overlay-content">
+						  <div class="popup">
+							  <h3 class="title">Contact:</h3>
+								<a href="tel: 2035444736">203-544-4736</a>
+							  <h3 class="title">Email:</h3>
+								<a href="mailto: info@newtest.com.eg">info@newtest.com.eg</a>
+							  <h3 class="title">Adress:</h3>
+								<a href="https://www.google.com/maps/place/New+Test+Co/@31.2547544,29.9781228,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5dab641b211d5:0xb3c888c19f1c69!8m2!3d31.2547544!4d29.9803115">New Test Co (NTCo)<br> 27, Ebrahem Elsherif Moustafa<br> Kamel, Alexandria Egypt</a>
+                          </div>
+					  </div>
+
+					</div>
+				</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="card" id="asia">
+        <div class="card-header" role="tab" id="headingTwo1">
+          <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button" aria-expanded="false" aria-controls="collapseTwo1">Asia</a> </h5>
+        </div>
+        <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordion3">
+            <div class="col-6">
+              <div id="headingEight1" role="tablist">
+              <div class="card country2">
+                <div class="card-header2" role="tab" id="headingNine1">
+                  <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseNine1" role="button" aria-expanded="false" aria-controls="collapseNine1"> China </a> </h5>
+                </div>
+                <div id="collapseNine1" class="collapse" role="tabpanel" aria-labelledby="headingNine1" data-parent="#headingEight1">
+                  <div class="card-body2"><a onClick="openPopup2()">MaiXin Co</a></div>
+					<div id="myNav2" class="overlay">
+					  <!-- Button to close the overlay navigation -->
+					  <a class="close" onclick="closePopup2()">&times;</a>
+
+					  <!-- Overlay content -->
+					  <div class="overlay-content">
+						  <div class="popup">
+							  <h3 class="title">Contact:</h3>
+								<a href="tel: 2035444736">203-544-4736</a>
+							  <h3 class="title">Email:</h3>
+								<a href="mailto: info@newtest.com.eg">info@newtest.com.eg</a>
+							  <h3 class="title">Adress:</h3>
+								<a href="https://www.google.com/maps/place/New+Test+Co/@31.2547544,29.9781228,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5dab641b211d5:0xb3c888c19f1c69!8m2!3d31.2547544!4d29.9803115">New Test Co (NTCo)<br> 27, Ebrahem Elsherif Moustafa<br> Kamel, Alexandria Egypt</a>
+                          </div>
+					  </div>
+			  </div>
+              <div class="card-body2"><a onClick="openPopup3()">Sinohealth</a></div>
+					<div id="myNav3" class="overlay">
+					  <!-- Button to close the overlay navigation -->
+					  <a class="close" onclick="closePopup3()">&times;</a>
+
+					  <!-- Overlay content -->
+					  <div class="overlay-content">
+						  <div class="popup">
+							  <h3 class="title">Contact:</h3>
+								<a href="tel: 2035444736">203-544-4736</a>
+							  <h3 class="title">Email:</h3>
+								<a href="mailto: info@newtest.com.eg">info@newtest.com.eg</a>
+							  <h3 class="title">Adress:</h3>
+								<a href="https://www.google.com/maps/place/New+Test+Co/@31.2547544,29.9781228,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5dab641b211d5:0xb3c888c19f1c69!8m2!3d31.2547544!4d29.9803115">New Test Co (NTCo)<br> 27, Ebrahem Elsherif Moustafa<br> Kamel, Alexandria Egypt</a>
+                          </div>
+					  </div>
+					</div>
+              </div>
+            </div>	  
+		  </div>
+			  <div id="headingEleven1" role="tablist">
+				<div class="card country2">
+				  <div class="card-header2" role="tab" id="headingTwelve1">
+					<h5 class="mb-0"> <a data-toggle="collapse" href="#collapseTwelve1" role="button" aria-expanded="false" aria-controls="collapseTwelve1"> Indonesia </a> </h5>
+				  </div>
+				  <div id="collapseTwelve1" class="collapse" role="tabpanel" aria-labelledby="headingTwelve1" data-parent="#headingEleven1">
+					<div class="card-body"><a onClick="openPopup4()">Biogen Scientific</a></div>
+						<div id="myNav4" class="overlay">
+						  <!-- Button to close the overlay navigation -->
+						  <a class="close" onclick="closePopup4()">&times;</a>
+
+						  <!-- Overlay content -->
+						  <div class="overlay-content">
+							  <div class="popup">
+								  <h3 class="title">Contact:</h3>
+									<a href="tel: 2035444736">203-544-4736</a>
+								  <h3 class="title">Email:</h3>
+									<a href="mailto: info@newtest.com.eg">info@newtest.com.eg</a>
+								  <h3 class="title">Adress:</h3>
+									<a href="https://www.google.com/maps/place/New+Test+Co/@31.2547544,29.9781228,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5dab641b211d5:0xb3c888c19f1c69!8m2!3d31.2547544!4d29.9803115">New Test Co (NTCo)<br> 27, Ebrahem Elsherif Moustafa<br> Kamel, Alexandria Egypt</a>
+							  </div>
+						  </div>
+
+						</div>
+				  </div>
+				  </div>
+				</div>
+              <div id="headingThirteen1" role="tablist">
+				<div class="card country2">
+				  <div class="card-header2" role="tab" id="headingFourteen1">
+					<h5 class="mb-0"> <a data-toggle="collapse" href="#collapseFourteen1" role="button" aria-expanded="false" aria-controls="collapseFourteen1"> Israel </a> </h5>
+				  </div>
+				  <div id="collapseFourteen1" class="collapse" role="tabpanel" aria-labelledby="headingFourteen1" data-parent="#headingThirteen1">
+					<div class="card-body"><a onClick="openPopup5()">Enco Diagnostics Itd</a></div>
+						<div id="myNav5" class="overlay">
+						  <!-- Button to close the overlay navigation -->
+						  <a class="close" onclick="closePopup5()">&times;</a>
+
+						  <!-- Overlay content -->
+						  <div class="overlay-content">
+							  <div class="popup">
+								  <h3 class="title">Contact:</h3>
+									<a href="tel: 2035444736">203-544-4736</a>
+								  <h3 class="title">Email:</h3>
+									<a href="mailto: info@newtest.com.eg">info@newtest.com.eg</a>
+								  <h3 class="title">Adress:</h3>
+									<a href="https://www.google.com/maps/place/New+Test+Co/@31.2547544,29.9781228,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5dab641b211d5:0xb3c888c19f1c69!8m2!3d31.2547544!4d29.9803115">New Test Co (NTCo)<br> 27, Ebrahem Elsherif Moustafa<br> Kamel, Alexandria Egypt</a>
+							  </div>
+						  </div>
+
+						</div>
+				  </div>
+				  </div>
+              </div>
+              <div id="headingFifteen1" role="tablist">
+				<div class="card country2">
+				  <div class="card-header2" role="tab" id="headingSixteen1">
+					<h5 class="mb-0"> <a data-toggle="collapse" href="#collapseSixteen1" role="button" aria-expanded="false" aria-controls="collapseSixteen1">Japan</a> </h5>
+				  </div>
+				  <div id="collapseSixteen1" class="collapse" role="tabpanel" aria-labelledby="headingSixteen1" data-parent="#headingFifteen1">
+					<div class="card-body"><a onClick="openPopup6()">Japan Tanner Corporation</a></div>
+						<div id="myNav6" class="overlay">
+						  <!-- Button to close the overlay navigation -->
+						  <a class="close" onclick="closePopup6()">&times;</a>
+
+						  <!-- Overlay content -->
+						  <div class="overlay-content">
+							  <div class="popup">
+								  <h3 class="title">Contact:</h3>
+									<a href="tel: 2035444736">203-544-4736</a>
+								  <h3 class="title">Email:</h3>
+									<a href="mailto: info@newtest.com.eg">info@newtest.com.eg</a>
+								  <h3 class="title">Adress:</h3>
+									<a href="https://www.google.com/maps/place/New+Test+Co/@31.2547544,29.9781228,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5dab641b211d5:0xb3c888c19f1c69!8m2!3d31.2547544!4d29.9803115">New Test Co (NTCo)<br> 27, Ebrahem Elsherif Moustafa<br> Kamel, Alexandria Egypt</a>
+							  </div>
+						  </div>
+
+						</div>
+				  </div>
+				  </div>
+              </div>
+              <div id="headingSeventeen1" role="tablist">
+				<div class="card country2">
+				  <div class="card-header2" role="tab" id="headingEighteen1">
+					<h5 class="mb-0"> <a data-toggle="collapse" href="#collapseEighteen1" role="button" aria-expanded="false" aria-controls="collapseEighteen1">Pakistan</a> </h5>
+				  </div>
+				  <div id="collapseEighteen1" class="collapse" role="tabpanel" aria-labelledby="headingEighteen1" data-parent="#headingSeventeen1">
+					<div class="card-body"><a onClick="openPopup7()">Friends Scientific</a></div>
+						<div id="myNav7" class="overlay">
+						  <!-- Button to close the overlay navigation -->
+						  <a class="close" onclick="closePopup7()">&times;</a>
+
+						  <!-- Overlay content -->
+						  <div class="overlay-content">
+							  <div class="popup">
+								  <h3 class="title">Contact:</h3>
+									<a href="tel: 2035444736">203-544-4736</a>
+								  <h3 class="title">Email:</h3>
+									<a href="mailto: info@newtest.com.eg">info@newtest.com.eg</a>
+								  <h3 class="title">Adress:</h3>
+									<a href="https://www.google.com/maps/place/New+Test+Co/@31.2547544,29.9781228,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5dab641b211d5:0xb3c888c19f1c69!8m2!3d31.2547544!4d29.9803115">New Test Co (NTCo)<br> 27, Ebrahem Elsherif Moustafa<br> Kamel, Alexandria Egypt</a>
+							  </div>
+						  </div>
+
+						</div>
+				  </div>
+				  </div>
+              </div>
+			</div>
+			<div class="col-6">
+              <div id="headingNineteen1" role="tablist">
+				<div class="card country2">
+				  <div class="card-header2" role="tab" id="headingTwenty1">
+					<h5 class="mb-0"> <a data-toggle="collapse" href="#collapseTwenty1" role="button" aria-expanded="false" aria-controls="collapseTwenty1">South Korea</a> </h5>
+				  </div>
+				  <div id="collapseTwenty1" class="collapse" role="tabpanel" aria-labelledby="headingTwenty1" data-parent="#headingNineteen1">
+					<div class="card-body"><a onClick="openPopup8()">Essence Medical Inc.</a></div>
+						<div id="myNav8" class="overlay">
+						  <!-- Button to close the overlay navigation -->
+						  <a class="close" onclick="closePopup8()">&times;</a>
+
+						  <!-- Overlay content -->
+						  <div class="overlay-content">
+							  <div class="popup">
+								  <h3 class="title">Contact:</h3>
+									<a href="tel: 2035444736">203-544-4736</a>
+								  <h3 class="title">Email:</h3>
+									<a href="mailto: info@newtest.com.eg">info@newtest.com.eg</a>
+								  <h3 class="title">Adress:</h3>
+									<a href="https://www.google.com/maps/place/New+Test+Co/@31.2547544,29.9781228,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5dab641b211d5:0xb3c888c19f1c69!8m2!3d31.2547544!4d29.9803115">New Test Co (NTCo)<br> 27, Ebrahem Elsherif Moustafa<br> Kamel, Alexandria Egypt</a>
+							  </div>
+						  </div>
+
+						</div>
+				  </div>
+				  </div>
+              </div>
+              <div id="headingTwentyone1" role="tablist">
+				<div class="card country2">
+				  <div class="card-header2" role="tab" id="headingTwentytwo1">
+					<h5 class="mb-0"> <a data-toggle="collapse" href="#collapseTwentytwo1" role="button" aria-expanded="false" aria-controls="collapseTwentytwo1">Taiwan</a> </h5>
+				  </div>
+				  <div id="collapseTwentytwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwentytwo1" data-parent="#headingTwentyone1">
+					<div class="card-body"><a onClick="openPopup9()">Bond Biotech, Inc.</a></div>
+						<div id="myNav9" class="overlay">
+						  <!-- Button to close the overlay navigation -->
+						  <a class="close" onclick="closePopup9()">&times;</a>
+
+						  <!-- Overlay content -->
+						  <div class="overlay-content">
+							  <div class="popup">
+								  <h3 class="title">Contact:</h3>
+									<a href="tel: 2035444736">203-544-4736</a>
+								  <h3 class="title">Email:</h3>
+									<a href="mailto: info@newtest.com.eg">info@newtest.com.eg</a>
+								  <h3 class="title">Adress:</h3>
+									<a href="https://www.google.com/maps/place/New+Test+Co/@31.2547544,29.9781228,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5dab641b211d5:0xb3c888c19f1c69!8m2!3d31.2547544!4d29.9803115">New Test Co (NTCo)<br> 27, Ebrahem Elsherif Moustafa<br> Kamel, Alexandria Egypt</a>
+							  </div>
+						  </div>
+
+						</div>
+				  </div>
+				  </div>
+              </div>
+              <div id="headingTwentythree1" role="tablist">
+				<div class="card country2">
+				  <div class="card-header2" role="tab" id="headingTwentyfour1">
+					<h5 class="mb-0"> <a data-toggle="collapse" href="#collapseTwentyfour1" role="button" aria-expanded="false" aria-controls="collapseTwentyfour1">Thailand</a> </h5>
+				  </div>
+				  <div id="collapseTwentyfour1" class="collapse" role="tabpanel" aria-labelledby="headingTwentyfour1" data-parent="#headingTwentythree1">
+					<div class="card-body"><a onClick="openPopup10()">Medicare Supply Ltd. Part</a></div>
+						<div id="myNav10" class="overlay">
+						  <!-- Button to close the overlay navigation -->
+						  <a class="close" onclick="closePopup10()">&times;</a>
+
+						  <!-- Overlay content -->
+						  <div class="overlay-content">
+							  <div class="popup">
+								  <h3 class="title">Contact:</h3>
+									<a href="tel: 2035444736">203-544-4736</a>
+								  <h3 class="title">Email:</h3>
+									<a href="mailto: info@newtest.com.eg">info@newtest.com.eg</a>
+								  <h3 class="title">Adress:</h3>
+									<a href="https://www.google.com/maps/place/New+Test+Co/@31.2547544,29.9781228,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5dab641b211d5:0xb3c888c19f1c69!8m2!3d31.2547544!4d29.9803115">New Test Co (NTCo)<br> 27, Ebrahem Elsherif Moustafa<br> Kamel, Alexandria Egypt</a>
+							  </div>
+						  </div>
+
+						</div>
+				  </div>
+				  </div>
+              </div>
+              <div id="headingTwentyfive1" role="tablist">
+				<div class="card country2">
+				  <div class="card-header2" role="tab" id="headingTwentysix1">
+					<h5 class="mb-0"> <a data-toggle="collapse" href="#collapseTwentysix1" role="button" aria-expanded="false" aria-controls="collapseTwentysix1">Turkey</a> </h5>
+				  </div>
+				  <div id="collapseTwentysix1" class="collapse" role="tabpanel" aria-labelledby="headingTwentysix1" data-parent="#headingTwentyfive1">
+					<div class="card-body"><a onClick="openPopup11()">Novogen Diagnostik Turkey</a></div>
+						<div id="myNav11" class="overlay">
+						  <!-- Button to close the overlay navigation -->
+						  <a class="close" onclick="closePopup11()">&times;</a>
+
+						  <!-- Overlay content -->
+						  <div class="overlay-content">
+							  <div class="popup">
+								  <h3 class="title">Contact:</h3>
+									<a href="tel: 2035444736">203-544-4736</a>
+								  <h3 class="title">Email:</h3>
+									<a href="mailto: info@newtest.com.eg">info@newtest.com.eg</a>
+								  <h3 class="title">Adress:</h3>
+									<a href="https://www.google.com/maps/place/New+Test+Co/@31.2547544,29.9781228,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5dab641b211d5:0xb3c888c19f1c69!8m2!3d31.2547544!4d29.9803115">New Test Co (NTCo)<br> 27, Ebrahem Elsherif Moustafa<br> Kamel, Alexandria Egypt</a>
+							  </div>
+						  </div>
+
+						</div>
+				  </div>
+				  </div>
+              </div>
+              <div id="headingTwentyseven1" role="tablist">
+				<div class="card country2">
+				  <div class="card-header2" role="tab" id="vietnam">
+					<h5 class="mb-0"> <a data-toggle="collapse" href="#collapseTwentyeight1" role="button" aria-expanded="false" aria-controls="collapseTwentyeight1">Vietnam</a> </h5>
+				  </div>
+				  <div id="collapseTwentyeight1" class="collapse" role="tabpanel" aria-labelledby="headingTwentyeight1" data-parent="#headingTwentyseven1">
+					<div class="card-body"><a onClick="openPopup12()">Phu My Int'l Technology Company</a></div>
+					<div class="main2">	
+					  <div id="myNav12" class="overlay">
+						  <!-- Button to close the overlay navigation -->
+						  <a class="close" onclick="closePopup12()">&times;</a>
+
+				
+						  <div class="overlay-content">
+							  <div class="popup">
+								  <h3 class="title">Contact:</h3>
+									<a href="tel: 2035444736">203-544-4736</a>
+								  <h3 class="title">Email:</h3>
+									<a href="mailto: info@newtest.com.eg">info@newtest.com.eg</a>
+								  <h3 class="title">Adress:</h3>
+									<a href="https://www.google.com/maps/place/New+Test+Co/@31.2547544,29.9781228,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5dab641b211d5:0xb3c888c19f1c69!8m2!3d31.2547544!4d29.9803115">New Test Co (NTCo)<br> 27, Ebrahem Elsherif Moustafa<br> Kamel, Alexandria Egypt</a>
+							  </div>
+						  </div>
+
+						</div>
+						</div>
+				  </div>
+				  </div>
+              </div>
+			</div>
+		  </div>
+		</div>	
+      <div class="card" id="europe">
+        <div class="card-header" role="tab" id="headingThree1">
+          <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseThree1"> Europe </a> </h5>
+        </div>
+        <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingThree1" data-parent="#accordion3">
+          <div class="card-body">Content for Accordion Panel 3</div>
+        </div>
+      </div>
+      <div class="card" id="south">
+        <div class="card-header" role="tab" id="headingFour1">
+          <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseFour1" role="button" aria-expanded="false" aria-controls="collapseFour1">South America</a> </h5>
+        </div>
+        <div id="collapseFour1" class="collapse" role="tabpanel" aria-labelledby="headingFour1" data-parent="#accordion3">
+          <div class="card-body">Content for Accordion Panel 3</div>
+        </div>
+      </div>
+      <div class="card" id="north">
+        <div class="card-header" role="tab" id="headingFive1">
+          <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseFive1" role="button" aria-expanded="false" aria-controls="collapseFive1">North America</a> </h5>
+        </div>
+        <div id="collapseFive1" class="collapse" role="tabpanel" aria-labelledby="headingFive1" data-parent="#accordion3">
+          <div class="card-body">Content for Accordion Panel 3</div>
+        </div>
+      </div>
+	</div>
+	</div>
+{% endblock %}
+
+{% block script %}
+	<script>
+		function openPopup() {
+			document.getElementsById("myNav").style.display = "block";
+		}
+
+		/* Close */
+		function closePopup() {
+			document.getElementById("myNav").style.display = "none";
+		}
+		function openPopup2() {
+			document.getElementById("myNav2").style.display = "block";
+		}
+
+		/* Close */
+		function closePopup2() {
+			document.getElementById("myNav2").style.display = "none";
+		}
+		function openPopup3() {
+			document.getElementById("myNav3").style.display = "block";
+		}
+
+		/* Close */
+		function closePopup3() {
+			document.getElementById("myNav3").style.display = "none";
+		}
+		function openPopup4() {
+			document.getElementById("myNav4").style.display = "block";
+		}
+
+		/* Close */
+		function closePopup4() {
+			document.getElementById("myNav4").style.display = "none";
+		}
+		function openPopup5() {
+			document.getElementById("myNav5").style.display = "block";
+		}
+
+		/* Close */
+		function closePopup5() {
+			document.getElementById("myNav5").style.display = "none";
+		}
+		function openPopup6() {
+			document.getElementById("myNav6").style.display = "block";
+		}
+
+		/* Close */
+		function closePopup6() {
+			document.getElementById("myNav6").style.display = "none";
+		}
+		function openPopup7() {
+			document.getElementById("myNav7").style.display = "block";
+		}
+
+		/* Close */
+		function closePopup7() {
+			document.getElementById("myNav7").style.display = "none";
+		}
+		function openPopup8() {
+			document.getElementById("myNav8").style.display = "block";
+		}
+
+		/* Close */
+		function closePopup8() {
+			document.getElementById("myNav8").style.display = "none";
+		}
+		function openPopup9() {
+			document.getElementById("myNav9").style.display = "block";
+		}
+
+		/* Close */
+		function closePopup9() {
+			document.getElementById("myNav9").style.display = "none";
+		}
+		function openPopup10() {
+			document.getElementById("myNav10").style.display = "block";
+		}
+
+		/* Close */
+		function closePopup10() {
+			document.getElementById("myNav10").style.display = "none";
+		}
+		function openPopup11() {
+			document.getElementById("myNav11").style.display = "block";
+		}
+
+		/* Close */
+		function closePopup11() {
+			document.getElementById("myNav11").style.display = "none";
+		}
+		function openPopup12() {
+			document.getElementById("myNav12").style.display = "block";
+		}
+
+		/* Close */
+		function closePopup12() {
+			document.getElementById("myNav12").style.display = "none";
+		}
+	</script>
+	<script src="{{url_for('static', filename='js/jquery-3.4.1.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/bootstrap-4.4.1.js')}}"></script>
+{% endblock %}

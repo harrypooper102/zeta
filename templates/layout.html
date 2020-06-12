@@ -1,0 +1,546 @@
+<!doctype html>
+  <html>
+  <head>
+  <title>Zeta Corp- ISO 13485 & FDA certified Biomedical Company</title>
+  <link href="../static/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
+	{% block head %}{% endblock %}
+    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script>
+    <script src="http://use.edgefonts.net/source-code-pro:n2:default;pt-mono:n4:default;anonymous-pro:n4:default.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width">
+  </head>
+    
+  <body>
+    <header class="logo"><a href="{{url_for('index')}}"><img src="../static/logo.png" alt="relevant"></a></header>
+    <div id="navbar">
+      <nav>
+        <ul>
+          <div class="whatsnew">
+            <li><a href="{{url_for('new')}}" class="dropNew">What's New<span class="downarrow">&#9662</span></a></li>
+            <div class="content">
+              <a href="{{url_for('new')}}">Monospecific Mouse Monoclonal Antibodies</a>
+              <a href="{{url_for('new')}}">New Antibodies in 2020</a>
+            </div>
+          </div>
+          <div class="whatsnew">
+            <li><a href="{{url_for('productfocus')}}" class="dropNew">Product Focus<span class="downarrow">&#9662</span></a></li>
+            <div class="content">
+              <a href="{{url_for('productfocus')}}">P16 Highlight</a>
+              <a href="{{url_for('productfocus')}}">INSM1/ATRX Highlight</a>
+            </div>
+          </div>				
+          <div class="whatsnew">
+            <li><a href="{{url_for('index')}}" class="dropNew">Products<span class="downarrow">&#9662</span></a></li>
+            <div class="content">
+              <a href="{{url_for('index')}}">Antibodies</a>
+              <a href="{{url_for('index')}}">Detection Kits</a>
+              <a href="{{url_for('index')}}">Buffers & Ancillary Reagents</a>
+            </div>
+          </div>			
+          <li><a href="{{url_for('index')}}">Antibody Panels</a></li>			
+          <div class="whatsnew">
+            <li><a href="{{url_for('distributors')}}" class="dropNew">Distributors<span class="downarrow">&#9662</span></a></li>
+            <div class="content">
+              <div class="distibutors">
+                <a href="{{url_for('africa')}}" class="dropNew2">Africa<span class="downarrow">&#9656</span></a>
+                <div class="content2">
+                  <a href="{{url_for('africa')}}">Egypt</a>
+                </div>
+              </div>
+              <div class="distibutors">
+                <a href="{{url_for('asia')}}" class="dropNew2">Asia<span class="downarrow">&#9656</span></a>
+                <div class="content4">
+                  <div class="asia">
+                    <a href="{{url_for('asia')}}">China</a>
+                    <a href="{{url_for('asia')}}">Indonesia</a>
+                    <a href="{{url_for('asia')}}">Israel</a>
+                    <a href="{{url_for('asia')}}">Japan</a>
+                    <a href="{{url_for('asia')}}">Pakistan</a>
+                  </div>
+                  <div class="asia">
+                    <a href="{{url_for('asia')}}">South Korea</a>
+                    <a href="{{url_for('asia')}}">Taiwan</a>
+                    <a href="{{url_for('asia')}}">Thailand</a>
+                    <a href="{{url_for('asia')}}">Turkey</a>
+                  </div>
+                </div>
+              </div>
+              <div class="distibutors">
+                <a href="{{url_for('europe')}}" class="dropNew2">Europe<span class="downarrow">&#9656</span></a>
+                <div class="content3">
+                  <div class="europe">
+                    <a href="{{url_for('europe')}}">Czech Republic</a>
+                    <a href="{{url_for('europe')}}">Denmark</a>
+                    <a href="{{url_for('europe')}}">France</a>
+                    <a href="{{url_for('europe')}}">Germany</a>
+                  </div>
+                  <div class="europe">
+                    <a href="{{url_for('europe')}}">Greece</a>
+                    <a href="{{url_for('europe')}}">Italy</a>
+                    <a href="{{url_for('europe')}}">Malta</a>
+                    <a href="{{url_for('europe')}}">Netherlands</a>
+                    <a href="{{url_for('europe')}}">Poland</a>
+                  </div>
+                  <div class="europe">
+                    <a href="{{url_for('europe')}}">Portugal</a>
+                    <a href="{{url_for('europe')}}">Romania</a>
+                    <a href="{{url_for('europe')}}">Slovakia</a>
+                    <a href="{{url_for('europe')}}">Spain</a>
+                    <a href="{{url_for('europe')}}">Sweden</a>
+                  </div>
+                </div>
+              </div>
+              <div class="distibutors">
+                <a href="{{url_for('southamerica')}}">South America<span class="downarrow">&#9656</span></a>
+                <div class="content2">
+                  <a href="{{url_for('southamerica')}}">Brazil</a>
+                  <a href="{{url_for('southamerica')}}">Chile</a>
+                  <a href="{{url_for('southamerica')}}">Columbia</a>
+                </div>
+              </div>
+              <div class="distibutors">
+                <a href="{{url_for('southamerica')}}" class="dropNew2">North America<span class="downarrow">&#9656</span></a>
+                <div class="content2">
+                  <a href="{{url_for('northamerica')}}">Mexico</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <li><a href="{{url_for('index')}}">How to Order</a></li>
+          <li><a href="{{url_for('index')}}">About Us</a></li>
+        </ul>
+      </nav>
+  </div>
+    <div id="nav2">
+      <div class="waffles">
+        <a href="{{url_for('index')}}" class="active"><img src="../static/logo.png"></a>
+        <div class="icon" onclick="myFunction2()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div id="mobileDropdown">
+        <a class="vertical" onClick="mobiledisplay()">What's New<span class="downarrow">&#9662</span></a>
+        <div id="mobiledropdown-content">
+          <a href="{{url_for('new')}}">Monospecific Mouse Monoclonal Antibodies</a>
+          <a href="{{url_for('new')}}">New Antibodies in 2020</a>
+        </div>
+        <a class="vertical" onClick="mobiledisplay2()">Product Focus<span class="downarrow">&#9662</span></a>
+        <div id="mobiledropdown-content2">
+          <a href="{{url_for('productfocus')}}">P16 Highlight</a>
+          <a href="{{url_for('productfocus')}}">INSM1/ATRX Highlight</a>
+        </div>
+        <a class="vertical" onClick="mobiledisplay3()">Products<span class="downarrow">&#9662</span></a>
+        <div id="mobiledropdown-content3">
+          <a href="{{url_for('index')}}">Antibodies</a>
+          <a href="{{url_for('index')}}">Detection Kits</a>
+          <a href="{{url_for('index')}}">Buffers & Ancillary Reagents</a>
+        </div>
+        <a class="vertical" href="{{url_for('index')}}">Antibody Panels</a>
+        <a class="vertical"  onClick="mobiledisplay4()">Distributors<span class="downarrow">&#9662</span></a>
+        <div id="mobiledropdown-content4">
+          <div class="distibutors">
+            <a class="button2" onClick="mobiledisplay5()">Africa<span class="downarrow">&#9656</span></a>
+            <div id="mobiledropdown-content5">
+              <a href="{{url_for('africa')}}">Egypt</a>
+            </div>
+          </div>
+          <div class="distibutors">
+            <a  onClick="mobiledisplay6()" class="button2">Asia<span class="downarrow">&#9656</span></a>
+            <div id="mobiledropdown-content6">
+              <div class="asia2">
+                <a href="{{url_for('asia')}}">China</a>
+                <a href="{{url_for('asia')}}">Indonesia</a>
+                <a href="{{url_for('asia')}}">Israel</a>
+                <a href="{{url_for('asia')}}">Japan</a>
+                <a href="{{url_for('asia')}}">Pakistan</a>
+              </div>
+              <div class="asia2">
+                <a href="{{url_for('asia')}}">South Korea</a>
+                <a href="{{url_for('asia')}}">Taiwan</a>
+                <a href="{{url_for('asia')}}">Thailand</a>
+                <a href="{{url_for('asia')}}">Turkey</a>
+              </div>
+            </div>
+          </div>
+          <div class="distibutors">
+            <a class="button2" onClick="mobiledisplay7()">Europe<span class="downarrow">&#9656</span></a>
+            <div id="mobiledropdown-content7">
+              <div class="europe2">
+                <a href="{{url_for('europe')}}">Czech Republic</a>
+                <a href="{{url_for('europe')}}">Denmark</a>
+                <a href="{{url_for('europe')}}">France</a>
+                <a href="{{url_for('europe')}}">Germany</a>
+                <a href="{{url_for('europe')}}">Greece</a>
+                <a href="{{url_for('europe')}}">Italy</a>
+                <a href="{{url_for('europe')}}">Malta</a>
+              </div>
+              <div class="europe2">
+                <a href="{{url_for('europe')}}">Netherlands</a>
+                <a href="{{url_for('europe')}}">Poland</a>
+                <a href="{{url_for('europe')}}">Portugal</a>
+                <a href="{{url_for('europe')}}">Romania</a>
+                <a href="{{url_for('europe')}}">Slovakia</a>
+                <a href="{{url_for('europe')}}">Spain</a>
+                <a href="{{url_for('europe')}}">Sweden</a>
+              </div>
+            </div>
+          </div>
+          <div class="distibutors">
+            <a class="button2" onClick="mobiledisplay8()">South America<span class="downarrow">&#9656</span></a>
+            <div id="mobiledropdown-content8">
+              <a href="{{url_for('southamerica')}}">Brazil</a>
+              <a href="{{url_for('southamerica')}}">Chile</a>
+              <a href="{{url_for('southamerica')}}">Columbia</a>
+            </div>
+          </div>
+          <div class="distibutors">
+            <a class="button2" onClick="mobiledisplay9()">North America&#9656</a>
+            <div id="mobiledropdown-content9">
+              <a href="{{url_for('northamerica')}}">Mexico</a>
+            </div>
+          </div>				
+        </div>
+        <a class="vertical" href="{{url_for('index')}}">How to Order</a>
+        <a class="vertical" href="{{url_for('index')}}">About Us</a>
+        
+      </div>
+  </div>
+	{% block body %}
+	{% endblock %}
+    <div class="footer">
+      <a href="{{url_for('index')}}"><p><img src="../static/logo.png" alt="relevant" style="width: 20%;"></p></a>
+      <div class="footercontent">
+        <div class="contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><a class="links" href = "mailto: info@zeta-corp.com">Email</a></li>
+            <li><a class="links" href = "tel: 6263552053">Phone</a></li>
+            <li><a class="links" href = "tel: 6268369149">Fax</a></li>
+          </ul>
+          <h3 class="extra"><a href="{{url_for('index')}}">Conditions of Sale</a></h3>
+        </div>
+      </div>
+      <div class="footercontent">
+        <h3>Certifications</h3>
+        <ul>
+          <li><a class="links" href = "{{url_for('index')}}">ISO 13485-2016 certificate</a></li>
+          <li><a class="links" href = "{{url_for('index')}}">FDA Certificate to Foreign Government</a></li>   
+        </ul>
+      </div>
+      <div class="footercontent">
+        <h3>Privacy Notice</h3>
+        <ul>
+          <li><a class="links" href = "{{url_for('index')}}">Privacy Policy</a></li>
+          <li><a class="links" href = "{{url_for('index')}}">Terms and Conditions</a></li>
+          <li><a class="links" href = "{{url_for('index')}}">Cookies Policy</a></li>
+          <li><a class="links" href = "{{url_for('index')}}">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footercontent">
+        <h3>Careers</h3>
+        <ul>
+          <li><a class="links" href = "{{url_for('index')}}">Our EEO Statement</a></li>
+        </ul>
+        <h3 class="extra" style="font-size: 15px;">Support</h3>
+        <ul>
+          <li><a href="{{url_for('index')}}" class="links">SDS (Safety Data Sheets)</a></li>
+          <li><a href="{{url_for('index')}}" class="links">Technical Support</a></li>
+          <li><a href="{{url_for('index')}}" class="links">Ordering Support</a></li>
+        </ul>
+      </div>
+  </div>
+    <div class="footer2">
+      <a class="footerDropdown"><p class="fix">Contact Us</p></a>
+      <div id="mobilefooter-content">
+        <a class="footerlinks" href = "mailto: info@zeta-corp.com"><p class="fix2">Email</p></a>
+        <a class="footerlinks" href = "tel: 6263552053"><p class="fix2">Phone</p></a>
+        <a class="footerlinks" href = "tel: 6268369149"><p class="fix2">Fax</p></a>
+      </div>
+      <a class="sale" href="{{url_for('index')}}"><p class="fix">Conditions of Sale</p></a>
+      <a class="footerDropdown"><p class="fix">Certifications</p></a>
+      <div id="mobilefooter-content2">
+        <a class="footerlinks" href = "{{url_for('index')}}"><p class="fix2">ISO 13485-2016 certificate</p></a>
+        <a class="footerlinks" href = "{{url_for('index')}}"><p class="fix2">FDA Certificate to Foreign Government</p></a>
+      </div>
+      <a class="footerDropdown"><p class="fix">Privacy Notice</p></a>
+      <div id="mobilefooter-content3">
+        <a class="footerlinks" href = "{{url_for('index')}}"><p class="fix2">Privacy Policy</p></a>
+        <a class="footerlinks" href = "{{url_for('index')}}"><p class="fix2">Terms and Conditions</p></a>
+        <a class="footerlinks" href = "{{url_for('index')}}"><p class="fix2">Cookies Policy</p></a>
+        <a class="footerlinks" href = "{{url_for('index')}}"><p class="fix2">Disclaimer</p></a>
+      </div>
+      <a class="footerDropdown"><p class="fix">Careers</p></a>
+      <div id="mobilefooter-content4">
+        <a class="footerlinks" href = "{{url_for('index')}}"><p class="fix2">Our EEO Statement</p></a>
+      </div>
+      <a class="footerDropdown"><p class="fix">Support</p></a>
+      <div id="mobilefooter-content5">
+        <a href="{{url_for('index')}}" class="footerlinks"><p class="fix2">SDS (Safety Data Sheets)</p></a>
+        <a href="{{url_for('index')}}" class="footerlinks"><p class="fix2">Technical Support</p></a>
+        <a href="{{url_for('index')}}" class="footerlinks"><p class="fix2">Ordering Support</p></a>
+      </div>
+  </div>
+  	<script>
+		window.onscroll = function() {
+			myFunction()
+		};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+		
+		function myFunction2() {
+		  var x = document.getElementById("mobileDropdown");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+				
+		function mobiledisplay() {
+		  var x = document.getElementById("mobiledropdown-content");
+          var a = document.getElementById("mobiledropdown-content2");
+          var b = document.getElementById("mobiledropdown-content3");
+          var c = document.getElementById("mobiledropdown-content4");
+          var d = document.getElementById("mobiledropdown-content5");
+          var e = document.getElementById("mobiledropdown-content6");
+          var f = document.getElementById("mobiledropdown-content7");
+          var g = document.getElementById("mobiledropdown-content8");
+          var h = document.getElementById("mobiledropdown-content9");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+		  }
+		}
+		function mobiledisplay2() {
+		  var x = document.getElementById("mobiledropdown-content2");
+          var a = document.getElementById("mobiledropdown-content");
+          var b = document.getElementById("mobiledropdown-content3");
+          var c = document.getElementById("mobiledropdown-content4");
+          var d = document.getElementById("mobiledropdown-content5");
+          var e = document.getElementById("mobiledropdown-content6");
+          var f = document.getElementById("mobiledropdown-content7");
+          var g = document.getElementById("mobiledropdown-content8");
+          var h = document.getElementById("mobiledropdown-content9");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+		  }
+		}
+		function mobiledisplay3() {
+		  var x = document.getElementById("mobiledropdown-content3");
+          var a = document.getElementById("mobiledropdown-content2");
+          var b = document.getElementById("mobiledropdown-content");
+          var c = document.getElementById("mobiledropdown-content4");
+          var d = document.getElementById("mobiledropdown-content5");
+          var e = document.getElementById("mobiledropdown-content6");
+          var f = document.getElementById("mobiledropdown-content7");
+          var g = document.getElementById("mobiledropdown-content8");
+          var h = document.getElementById("mobiledropdown-content9");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+		  }
+		}
+		function mobiledisplay4() {
+		  var x = document.getElementById("mobiledropdown-content4");
+          var a = document.getElementById("mobiledropdown-content2");
+          var b = document.getElementById("mobiledropdown-content3");
+          var c = document.getElementById("mobiledropdown-content");
+          var d = document.getElementById("mobiledropdown-content5");
+          var e = document.getElementById("mobiledropdown-content6");
+          var f = document.getElementById("mobiledropdown-content7");
+          var g = document.getElementById("mobiledropdown-content8");
+          var h = document.getElementById("mobiledropdown-content9");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+		  }
+		}
+		function mobiledisplay5() {
+		  var x = document.getElementById("mobiledropdown-content5");
+          var a = document.getElementById("mobiledropdown-content2");
+          var b = document.getElementById("mobiledropdown-content3");
+          var c = document.getElementById("mobiledropdown-content4");
+          var d = document.getElementById("mobiledropdown-content");
+          var e = document.getElementById("mobiledropdown-content6");
+          var f = document.getElementById("mobiledropdown-content7");
+          var g = document.getElementById("mobiledropdown-content8");
+          var h = document.getElementById("mobiledropdown-content9");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "block";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+		  }
+		}
+		function mobiledisplay6() {
+		  var x = document.getElementById("mobiledropdown-content6");
+          var a = document.getElementById("mobiledropdown-content2");
+          var b = document.getElementById("mobiledropdown-content3");
+          var c = document.getElementById("mobiledropdown-content4");
+          var d = document.getElementById("mobiledropdown-content5");
+          var e = document.getElementById("mobiledropdown-content");
+          var f = document.getElementById("mobiledropdown-content7");
+          var g = document.getElementById("mobiledropdown-content8");
+          var h = document.getElementById("mobiledropdown-content9");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "block";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+		  }
+		}
+		function mobiledisplay7() {
+		  var x = document.getElementById("mobiledropdown-content7");
+          var a = document.getElementById("mobiledropdown-content2");
+          var b = document.getElementById("mobiledropdown-content3");
+          var c = document.getElementById("mobiledropdown-content4");
+          var d = document.getElementById("mobiledropdown-content5");
+          var e = document.getElementById("mobiledropdown-content6");
+          var f = document.getElementById("mobiledropdown-content");
+          var g = document.getElementById("mobiledropdown-content8");
+          var h = document.getElementById("mobiledropdown-content9");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "block";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+		  }
+		}
+		function mobiledisplay8() {
+		  var x = document.getElementById("mobiledropdown-content8");
+          var a = document.getElementById("mobiledropdown-content2");
+          var b = document.getElementById("mobiledropdown-content3");
+          var c = document.getElementById("mobiledropdown-content4");
+          var d = document.getElementById("mobiledropdown-content5");
+          var e = document.getElementById("mobiledropdown-content6");
+          var f = document.getElementById("mobiledropdown-content7");
+          var g = document.getElementById("mobiledropdown-content");
+          var h = document.getElementById("mobiledropdown-content9");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "block";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+		  }
+		}
+		function mobiledisplay9() {
+		  var x = document.getElementById("mobiledropdown-content9");
+          var a = document.getElementById("mobiledropdown-content2");
+          var b = document.getElementById("mobiledropdown-content3");
+          var c = document.getElementById("mobiledropdown-content4");
+          var d = document.getElementById("mobiledropdown-content5");
+          var e = document.getElementById("mobiledropdown-content6");
+          var f = document.getElementById("mobiledropdown-content7");
+          var g = document.getElementById("mobiledropdown-content8");
+          var h = document.getElementById("mobiledropdown-content");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "block";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+		  }
+}
+
+		var acc = document.getElementsByClassName("footerDropdown");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+			this.classList.toggle("show");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+			  panel.style.maxHeight = null;
+			} else {
+			  panel.style.maxHeight = panel.scrollHeight + "px";
+			} 
+		  });
+		}
+
+	</script>
+	 {% block script %}{% endblock %}
+  </body>
+</html>
