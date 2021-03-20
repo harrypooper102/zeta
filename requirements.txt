@@ -7,7 +7,7 @@ filelock==3.0.12
 Flask==1.1.2
 Flask-Session==0.3.2
 itsdangerous==1.1.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 passlib==1.7.2
 pipenv==2018.11.26
